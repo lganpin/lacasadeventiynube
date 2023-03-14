@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>La casa de Venti y Nube</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="row" id="header">
+        <nav id="prueba" class="navbar">
+            <div class="container-fluid align-text-center px-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logo.png" alt="Logo" width="150" height="75" class="align-text-center">
+                    La casa de Venti y Nube
+                </a>
+                <a id="myButton" type="button" class="btn btn-outline-info d-flex" href="./contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div id="menu" class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-12 accordion accordion-flush row-10">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Mis gatitos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./venti.html">Venti</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./nube.html">Nube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Felinos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./error.html">Grandes felinos</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./error.html">Gatitos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Información útil
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./cuidados.html">Cuidados</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./raza.html">¿Qué gato quiero?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-md col-lg col-xl">
+            <div class="container-lg my-3 w-80 p-4" id="main">
+                <div class="row text-center">
+                    <h1 class="text-center">Contacta con nosotros</h1>
+                </div>
+                <form class="form-inline">
+                    <div class="row m-3">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre"
+                                required>
+                        </div>
+                        <div class="col">
+                            <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="ejemplo@gmail.com" required>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <label for="exampleFormControlTextarea1" class="form-label">Pregunta o comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="row m-3">
+                        <div class="col">
+                            <label for="formFile" class="form-label">Adjunta archivo</label>
+                            <i class="bi bi-question-circle" data-toggle="tooltip" data-placement="right"
+                                title="Manda foto de tu gatito o de algún informe que desees mostrarnos"></i>
+                            <input class="form-control" type="file" id="formFile">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col text-center">
+                            <button type="submit" class="btn btn-light mb-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal" id="myButton">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Formulario enviado</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Su consulta ha sido enviada correctamente
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-lg my-3 w-50 p-4" id="main">
+                <div class="row text-center">
+                    <h1 class="text-center">Visítanos</h1>
+                </div>
+                <div class="row m-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.3837010035973!2d-5.936988884356993!3d37.30973784655004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd127153b5a66ea3%3A0x77048760d6a5739!2sAv.%20Felipe%20Gonz%C3%A1lez%20M%C3%A1rquez%2C%2010%2C%2041704%20Dos%20Hermanas%2C%20Sevilla%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sus!4v1678550844156!5m2!1ses!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer" class="row footer mt-auto flex-shrink-0 py-4 text-black-50">
+        <div class="container text-center">
+            <small>Copyright &copy; La casa de Venti y Nube</small>
+        </div>
+    </footer>
+</body>
+
+</html>

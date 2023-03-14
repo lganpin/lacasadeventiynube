@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <title>Bootstrap demo</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <div class="row" id="header">
+        <nav id="prueba" class="navbar">
+            <div class="container-fluid align-text-center px-4">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="img/logo.png" alt="Logo" width="150" height="75" class="align-text-center">
+                    La casa de Venti y Nube
+                </a>
+                <a id="myButton" type="button" class="btn btn-outline-info d-flex" href="./contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div id="menu" class="col-xs-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <div class="col-12 accordion accordion-flush row-10">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Mis gatitos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./venti.html">Venti</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./nube.html">Nube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Felinos
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./error.html">Grandes felinos</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./error.html">Gatitos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Información útil
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="text-center">
+                                <a href="./cuidados.html">Cuidados</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="./raza.html">¿Qué gato quiero?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-md col-lg col-xl">
+            <div class="container-lg my-3 w-80 p-4" id="main">
+                <div class="row text-center">
+                    <h1 class="text-center pt-3">¿Qué gato quiero?</h1>
+                </div>
+                <div class="row m-3">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./raza.html">Raza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./edad.html" tabindex="-1" aria-disabled="true">Edad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sexo.html" tabindex="-1" aria-disabled="true">Sexo</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="m-5">
+                    <img src="./img/g3.png" class="w-100" alt="Gato gris">
+                </div>
+                <p class="text-center">
+                    <button class="btn btn-light" id="myButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        Gato de raza
+                    </button>
+                    <button class="btn btn-light" id="myButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Cruce
+                    </button>
+                    <button class="btn btn-light" id="myButton" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Mixto
+                    </button>
+                </p>
+
+
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                        <p>Hay alrededor de 60 razas y colores diferentes de gatos con pedigrí reconocidas, es decir,
+                            tienes mucho donde elegir al comprar un gato. Los gatos con pedigrí se dividen en siete
+                            tipos:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Persa</li>
+                            <li class="list-group-item">Británico</li>
+                            <li class="list-group-item">Pelo semilargo</li>
+                            <li class="list-group-item">Birmano</li>
+                            <li class="list-group-item">Oriental</li>
+                            <li class="list-group-item">Siamés</li>
+                            <li class="list-group-item">Exótico</li>
+                        </ul>
+                        <p>
+                            La gran ventaja de comprar un gatito o gato adulto con pedigrí es que sabrás mejor qué
+                            esperar de tu mascota. Por ejemplo, un siamés puro es probable que sea maullador, travieso y
+                            exija tu atención. Comprar un gato con pedigrí también te dará una idea del tamaño que
+                            alcanzará, de la longitud de su pelaje y de algunos de los problemas de salud frecuentes en
+                            esa raza.
+                        </p>
+                        <br>
+                        <p>
+                            Es importante recordar que, desafortunadamente, a veces puede existir consanguinidad, lo que
+                            significa que los gatos con pedigrí son más vulnerables a las enfermedades o problemas de
+                            comportamiento heredados genéticamente. Debes tener en cuenta estas cuestiones y otras
+                            características de la raza cuando decidas tener un gato.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body">
+                        <p>Los cruces tienen dos padres con pedigrí, pero de diferente raza. De hecho, muchas nuevas
+                            razas con pedigrí se han creado mediante minuciosos cruces (por ejemplo, el gato tonquinés
+                            se ha creado mediante el cruce de siamés con birmano).</p>
+                        <br>
+                        <p>
+                            Aunque se realizan algunos cruces con el propósito de crear una nueva raza, la mayoría de
+                            los casos actuales son resultado de un apareamiento accidental entre una hembra con pedigrí
+                            y un macho de raza diferente a la prevista. En los gatitos nacidos de un cruce, a veces se
+                            pueden observar algunas de las características físicas y conductuales de ambas razas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body">
+                        <p>
+                            También conocidos como “gatos comunes”, estos gatos no tienen antepasados con pedigrí.
+                            Normalmente, se clasifican como "domésticos de pelo corto" o "domésticos de pelo largo”.
+                        </p>
+                        <br>
+                        <p>
+                            Si estás pensando en tener un gato de raza mixta, recuerda que no podrás saber exactamente
+                            qué tipo de gato será, ya que no tendrás información sobre las razas que componen su ADN.
+                            Por ejemplo, puede tener una personalidad más traviesa o un pelaje de diferentes
+                            características. Afortunadamente, a diferencia de los perros, los gatos no se diferencian
+                            mucho en tamaño o forma, por lo que no cabe esperar grandes sorpresas.
+                        </p>
+                        <br>
+                        <p>
+                            Por lo general, a menudo los gatos comunes tienen mejor salud que los gatos con pedigrí, ya
+                            que disponen de un mayor acervo genético y presentan menos problemas genéticos inherentes.
+                            También pueden tener una personalidad felina más completa y equilibrada. En definitiva, los
+                            gatos y gatitos comunes suelen ser más baratos y más fáciles de encontrar.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer id="footer" class="row footer mt-auto flex-shrink-0 py-4 text-black-50">
+        <div class="container text-center">
+            <small>Copyright &copy; La casa de Venti y Nube</small>
+        </div>
+    </footer>
+</body>
+
+</html>
